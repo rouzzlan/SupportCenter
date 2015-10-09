@@ -1,0 +1,12 @@
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.UI.CA.exe.config
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.UI.CA.exe
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.UI.CA.pdb
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.BL.dll
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.BL.Domain.dll
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.DAL.dll
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.BL.pdb
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.BL.Domain.pdb
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\bin\Debug\SC.DAL.pdb
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\obj\Debug\UI-CA.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\obj\Debug\SC.UI.CA.exe
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\UI-CA\obj\Debug\SC.UI.CA.pdb

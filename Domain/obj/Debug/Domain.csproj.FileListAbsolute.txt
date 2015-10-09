@@ -1,0 +1,5 @@
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\Domain\bin\Debug\SC.BL.Domain.dll
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\Domain\bin\Debug\SC.BL.Domain.pdb
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\Domain\obj\Debug\SC.BL.Domain.dll
+\\Mac\Dropbox\KdG\JAAR_4\programmeren 2 dotNet\SupportCenter\Domain\obj\Debug\SC.BL.Domain.pdb
