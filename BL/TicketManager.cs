@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using SC.BL.Domain;
 using SC.DAL;
+using System.ComponentModel.DataAnnotations;
+
 namespace SC.BL
 {
   public class TicketManager : ITicketManager
@@ -21,6 +23,7 @@ namespace SC.BL
     }
     public Ticket AddTicket(int accountId, string question)
     {
+
       Ticket t = new Ticket()
       {
         AccountId = accountId,
@@ -32,6 +35,7 @@ namespace SC.BL
     }
     public Ticket AddTicket(int accountId, string device, string problem)
     {
+
       Ticket t = new HardwareTicket()
       {
         AccountId = accountId,
@@ -44,6 +48,7 @@ namespace SC.BL
     }
     private Ticket AddTicket(Ticket ticket)
     {
+      this.Validate(ticket);
       return repo.CreateTicket(ticket);
     }
     public Ticket GetTicket(int ticketNumber)
@@ -52,6 +57,7 @@ namespace SC.BL
     }
     public void ChangeTicket(Ticket ticket)
     {
+      this.Validate(ticket);
       repo.UpdateTicket(ticket);
     }
     public void RemoveTicket(int ticketNumber)
@@ -64,6 +70,7 @@ namespace SC.BL
     }
     public TicketResponse AddTicketResponse(int ticketNumber, string response, bool isClientResponse)
     {
+
       Ticket ticketToAddResponseTo = this.GetTicket(ticketNumber);
       if (ticketToAddResponseTo != null)
       {
@@ -85,12 +92,25 @@ namespace SC.BL
         else
           ticketToAddResponseTo.State = TicketState.Answered;
         // Save changes to repository
+        this.Validate(newTicketResponse);
+        this.Validate(ticketToAddResponseTo);
         repo.CreateTicketResponse(newTicketResponse);
         repo.UpdateTicket(ticketToAddResponseTo);
         return newTicketResponse;
       }
       else
         throw new ArgumentException("Ticketnumber '" + ticketNumber + "' not found!");
+    }
+    private void Validate(Ticket ticket)
+    {
+      List<ValidationResult> errors = new List<ValidationResult>();
+      bool valid = Validator.TryValidateObject(ticket, new ValidationContext(ticket), errors, validateAllProperties: true);
+      if (!valid)
+        throw new ValidationException("Ticket not valid!");
+    }
+    private void Validate(TicketResponse response)
+    {
+      Validator.ValidateObject(response, new ValidationContext(response), validateAllProperties: true);
     }
 
   }
