@@ -12,11 +12,8 @@ namespace SC.UI.CA
   {
     public static void Main(string[] args)
     {
-      Ticket t1 = new Ticket() {
-        TicketNumber = 1, AccountId = 1, Text = "", State = TicketState.Open, DateOpened = DateTime.Now
-      };
-      var errors = new List<ValidationResult>();
-      Validator.TryValidateObject(t1, new ValidationContext(t1), errors, validateAllProperties: true);
-    }
+      Ticket t2 = new HardwareTicket() { TicketNumber = 2, AccountId = 1, DeviceName = "LPT-9876", Text = "text", State = TicketState.Open, DateOpened = DateTime.Now }; var errors = new List<ValidationResult>(); Validator.TryValidateObject(t2, new ValidationContext(t2), errors, validateAllProperties: true);
+    
+  }
   }
 }
